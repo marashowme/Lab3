@@ -15,6 +15,8 @@
         button, .btn { padding: 6px 12px; background: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; text-decoration: none; }
         button:hover, .btn:hover { background: #0056b3; }
         .error { color: red; font-size: 0.9em; }
+        .mb-0 { margin-bottom: 0; }
+        footer { margin-top: 20px; padding: 12px; color: #666; text-align: center; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -24,12 +26,17 @@
     <a href="/">Головна</a>
     <a href="{{ route('country.index') }}">🌍 Довідник країн (ЛР)</a>
     <a href="{{ route('product.index') }}">💻 Магазин техніки (Індивідуальне)</a>
+    <a href="{{ route('stats.pages') }}">📊 Статистика магазину</a>
 </nav>
 
 <div class="container">
     <!-- Сюди буде підставлятися вміст кожної сторінки -->
     @yield('content')
 </div>
+
+<footer>
+    <p class="mb-0">Виконав: студент групи РС-42 Марочко Єгор</p>
+</footer>
 
 </body>
 </html>
